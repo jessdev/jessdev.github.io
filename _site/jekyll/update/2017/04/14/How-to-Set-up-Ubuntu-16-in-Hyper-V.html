@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Your awesome title</title>
-  <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search resu...">
+  <title>How to Set up Ubuntu 16 in Hyper V</title>
+  <meta name="description" content="Things you will need An iso of Ubuntu 16 a computer with Hyper-V installed Powershell">
 
   <link rel="stylesheet" href="/assets/main.css">
-  <link rel="canonical" href="http://localhost:4000/">
+  <link rel="canonical" href="http://localhost:4000/jekyll/update/2017/04/14/How-to-Set-up-Ubuntu-16-in-Hyper-V.html">
   <link rel="alternate" type="application/rss+xml" title="Your awesome title" href="/feed.xml">
   
   
@@ -56,36 +56,43 @@
 
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <div class="home">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <h1 class="page-heading">Posts</h1>
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">How to Set up Ubuntu 16 in Hyper V</h1>
+    <p class="post-meta"><time datetime="2017-04-14T00:15:00-04:00" itemprop="datePublished">Apr 14, 2017</time></p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <h1 id="things-you-will-need">Things you will need</h1>
+<ul>
+  <li>An iso of Ubuntu 16</li>
+  <li>a computer with Hyper-V installed</li>
+  <li>Powershell</li>
+</ul>
+
+<h1 id="how-to-to-begin">How to to begin</h1>
+<ol>
+  <li>Set up your Virtual Switch
+ 1.1 Choose either an internal switch or an external switch</li>
+  <li>Setting up your Hyper-V instance
+ 2.1 Name your instance and pick where you want to store your VM
+ 2.2 Select generation 2
+ 2.3 Choose start up memory
+ 2.4 Select your recently created Switch
+ 2.5 Create a hard disk
+ 2.6 Select your Ubuntu 16 ISO
+ 2.7 Finish</li>
+  <li>Making sure It can Boot
+ 3.1 Open powershell
+ 3.2 `Set-VMFirmware -VMName “Your-Computer-Name-Here” -EnableSecureBoot off</li>
+  <li>Your Gen 2 Ubuntu 16 VM should boot now</li>
+</ol>
+
+  </div>
+
   
-  
-
-
-  <ul class="post-list">
-    
-      <li>
-        <span class="post-meta">Apr 14, 2017</span>
-
-        <h2>
-          <a class="post-link" href="/jekyll/update/2017/04/14/How-to-Set-up-Ubuntu-16-in-Hyper-V.html">How to Set up Ubuntu 16 in Hyper V</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Mar 6, 2017</span>
-
-        <h2>
-          <a class="post-link" href="/jekyll/update/2017/03/06/welcome-to-jekyll.html">Welcome to Jekyll!</a>
-        </h2>
-      </li>
-    
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
-
-</div>
+</article>
 
       </div>
     </main>

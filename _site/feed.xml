@@ -1,5 +1,28 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="http://jekyllrb.com" version="3.4.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2017-04-14T00:12:43-04:00</updated><id>/</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
-</subtitle><entry><title type="html">Welcome to Jekyll!</title><link href="/jekyll/update/2017/03/06/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2017-03-06T21:01:54-05:00</published><updated>2017-03-06T21:01:54-05:00</updated><id>/jekyll/update/2017/03/06/welcome-to-jekyll</id><content type="html" xml:base="/jekyll/update/2017/03/06/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="http://jekyllrb.com" version="3.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-04-14T00:15:59-04:00</updated><id>http://localhost:4000/</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+</subtitle><entry><title type="html">How to Set up Ubuntu 16 in Hyper V</title><link href="http://localhost:4000/jekyll/update/2017/04/14/How-to-Set-up-Ubuntu-16-in-Hyper-V.html" rel="alternate" type="text/html" title="How to Set up Ubuntu 16 in Hyper V" /><published>2017-04-14T00:15:00-04:00</published><updated>2017-04-14T00:15:00-04:00</updated><id>http://localhost:4000/jekyll/update/2017/04/14/How-to-Set-up-Ubuntu-16-in-Hyper-V</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2017/04/14/How-to-Set-up-Ubuntu-16-in-Hyper-V.html">&lt;h1 id=&quot;things-you-will-need&quot;&gt;Things you will need&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;An iso of Ubuntu 16&lt;/li&gt;
+  &lt;li&gt;a computer with Hyper-V installed&lt;/li&gt;
+  &lt;li&gt;Powershell&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;how-to-to-begin&quot;&gt;How to to begin&lt;/h1&gt;
+&lt;ol&gt;
+  &lt;li&gt;Set up your Virtual Switch
+ 1.1 Choose either an internal switch or an external switch&lt;/li&gt;
+  &lt;li&gt;Setting up your Hyper-V instance
+ 2.1 Name your instance and pick where you want to store your VM
+ 2.2 Select generation 2
+ 2.3 Choose start up memory
+ 2.4 Select your recently created Switch
+ 2.5 Create a hard disk
+ 2.6 Select your Ubuntu 16 ISO
+ 2.7 Finish&lt;/li&gt;
+  &lt;li&gt;Making sure It can Boot
+ 3.1 Open powershell
+ 3.2 `Set-VMFirmware -VMName “Your-Computer-Name-Here” -EnableSecureBoot off&lt;/li&gt;
+  &lt;li&gt;Your Gen 2 Ubuntu 16 VM should boot now&lt;/li&gt;
+&lt;/ol&gt;</content><author><name></name></author><summary type="html">Things you will need An iso of Ubuntu 16 a computer with Hyper-V installed Powershell</summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2017/03/06/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2017-03-06T21:01:54-05:00</published><updated>2017-03-06T21:01:54-05:00</updated><id>http://localhost:4000/jekyll/update/2017/03/06/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2017/03/06/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
 
 &lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
 
