@@ -8,9 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="I'm a software developer for R&D at Dow Chemical. This blog is for documenting the code/frameworks/etc for me and for you.'">
 
-    <title>Jessica DeVriese</title>
+    <title>How to Set up Ubuntu 16 in Hyper V - Jessica DeVriese</title>
 
-    <link rel="canonical" href="http://localhost:4000/">
+    <link rel="canonical" href="http://localhost:4000/jekyll/update/2017/04/14/How-to-Set-up-Ubuntu-16-in-Hyper-V/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -81,100 +81,77 @@
 </nav>
 
 
-    <!-- Page Header -->
+    <!-- Post Header -->
 <header class="intro-header" style="background-image: url('/img/home-bg.jpg')">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="site-heading">
-                    <h1>Jessica DeVriese</h1>
-                    <hr class="small">
-                    <span class="subheading">A Clean Blog Theme by Start Bootstrap</span>
+                <div class="post-heading">
+                    <h1>How to Set up Ubuntu 16 in Hyper V</h1>
+                    
+                    <span class="meta">Posted by Jessica DeVriese on April 14, 2017</span>
                 </div>
             </div>
         </div>
     </div>
 </header>
 
-<!-- Main Content -->
-<div class="container">
-	<div class="row">
-		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-			
-<div class="post-preview">
-    <a href="/jekyll/update/2017/04/14/How-to-Set-up-Ubuntu-16-in-Hyper-V/">
-        <h2 class="post-title">            How to Set up Ubuntu 16 in Hyper V
-        </h2>
-        
-    </a>
-    <p class="post-meta">Posted by Jessica DeVriese on April 14, 2017</p>
-</div>
-<hr>
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 
-<div class="post-preview">
-    <a href="/jekyll/update/2017/03/06/welcome-to-jekyll/">
-        <h2 class="post-title">            Welcome to Jekyll!
-        </h2>
-        
-    </a>
-    <p class="post-meta">Posted by Jessica DeVriese on March 6, 2017</p>
-</div>
-<hr>
-
-<div class="post-preview">
-    <a href="/2014/09/24/man-must-explore/">
-        <h2 class="post-title">            Man must explore, and this is exploration at its greatest
-        </h2>
-        
-        <h3 class="post-subtitle">
-            Problems look mighty small from 150 miles up
-        </h3>
-        
-    </a>
-    <p class="post-meta">Posted by Start Bootstrap on September 24, 2014</p>
-</div>
-<hr>
-
-<div class="post-preview">
-    <a href="/2014/09/18/i-believe/">
-        <h2 class="post-title">            I believe every human has a finite number of heartbeats. I don't intend to waste any of mine.
-        </h2>
-        
-    </a>
-    <p class="post-meta">Posted by Start Bootstrap on September 18, 2014</p>
-</div>
-<hr>
-
-<div class="post-preview">
-    <a href="/2014/08/24/science-has-not-yet-mastered-prophecy/">
-        <h2 class="post-title">            Science has not yet mastered prophecy
-        </h2>
-        
-        <h3 class="post-subtitle">
-            We predict too much for the next year and yet far too little for the next ten.
-        </h3>
-        
-    </a>
-    <p class="post-meta">Posted by Start Bootstrap on August 24, 2014</p>
-</div>
-<hr>
-
-
-<!-- Pager -->
-
-<ul class="pager">
-    
-    
-    <li class="next">
-        <a href="/page2">Older Posts &rarr;</a>
-    </li>
-    
+				<h1 id="things-you-will-need">Things you will need</h1>
+<ul>
+  <li>An iso of Ubuntu 16</li>
+  <li>a computer with Hyper-V installed</li>
+  <li>Powershell</li>
 </ul>
 
+<h1 id="how-to-to-begin">How to to begin</h1>
+<ol>
+  <li>Set up your Virtual Switch
+    <ul>
+      <li>Choose either an internal switch or an external switch</li>
+    </ul>
+  </li>
+  <li>Setting up your Hyper-V instance
+    <ol>
+      <li>Name your instance and pick where you want to store your VM</li>
+      <li>Select generation 2</li>
+      <li>Choose start up memory</li>
+      <li>Select your recently created Switch</li>
+      <li>Create a hard disk</li>
+      <li>Select your Ubuntu 16 IS</li>
+      <li>Finish</li>
+    </ol>
+  </li>
+  <li>Making sure It can Boot
+    <ol>
+      <li>Open powershell</li>
+      <li>`Set-VMFirmware -VMName “Your-Computer-Name-Here” -EnableSecureBoot off</li>
+    </ol>
+  </li>
+  <li>Your Gen 2 Ubuntu 16 VM should boot now</li>
+</ol>
 
-		</div>
-	</div>
-</div>
+
+                <hr>
+
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/jekyll/update/2017/03/06/welcome-to-jekyll/" data-toggle="tooltip" data-placement="top" title="Welcome to Jekyll!">&larr; Previous Post</a>
+                    </li>
+                    
+                    
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</article>
 
 <hr>
 
