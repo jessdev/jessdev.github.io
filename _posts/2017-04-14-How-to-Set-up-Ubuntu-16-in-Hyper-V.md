@@ -2,8 +2,11 @@
 layout: post
 title:  "How to Set up Ubuntu 16 in Hyper V"
 date:   2017-04-14 00:15
-categories: jekyll update
+categories: Ubuntu Generation 2 Hyper-V VM
 ---
+
+# Introduction
+Why would I need a walk through for setting up a VM? Maybe you don't. Maybe you've been googling for an hour and you can't figure out why you can't boot your ubuntu 16 OS wont boot using generation 2. If that's the case, this is the blog post for you.
 
 # Things you will need
 * An iso of Ubuntu 16
