@@ -6,7 +6,7 @@ categories: Ubuntu Generation 2 Hyper-V VM
 ---
 
 # Introduction
-Why would I need a walk through for setting up a VM? Maybe you don't. Maybe you've been googling for an hour and you can't figure out why you can't boot your ubuntu 16 OS wont boot using generation 2. If that's the case, this is the blog post for you.
+This walkthrough is meant to document how I managed to configure my instance of Hyper-V to stand up Ubuntu 16 using the Generation 2 option. I ran into an issue half way through the process that prevented me progressing past secure boot. I could get the VM to boot in Generation 1 but had to go through the whole installation process from the beginning. 
 
 # Things you will need
 * An iso of Ubuntu 16
