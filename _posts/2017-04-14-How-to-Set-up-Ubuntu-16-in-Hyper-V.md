@@ -22,7 +22,7 @@ This walkthrough is meant to document how I managed to configure my instance of 
    3. Choose start up memory
    4. Select your recently created Switch
    5. Create a hard disk
-   6. Select your Ubuntu 16 IS
+   6. Select your Ubuntu 16 OS
    7. Finish
 3. Making sure It can Boot
    1. Open powershell
