@@ -2,7 +2,7 @@
 layout: post
 title:  "How to Set up Ubuntu 16 in Hyper V"
 date:   2017-04-14 00:15
-categories: Ubuntu Generation 2 Hyper-V VM
+categories: Code VM
 ---
 
 # Introduction

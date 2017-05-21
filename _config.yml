@@ -13,11 +13,16 @@ email_username:  jessdev@umich.edu
 # To enable google analytics, uncomment below line with a valid Google Tracking ID
 # google_tracking_id:
 
+#collections
+#collections:
+#  hobbies:
+#    output: true
+
 # Build settings
 markdown: kramdown
 highlighter: rouge
 permalink: pretty
 paginate: 5
-exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md", ".gitignore"]
 
 gems: [jekyll-paginate, jekyll-feed]
