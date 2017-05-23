@@ -12,4 +12,6 @@ The program also allows us to design interesting maps and mechanics macros.
    
 One thing that I wanted to do was create a consistency between the tokens we use. 
 I also wanted a style that could differentiate between friend and foe. 
-I designed a reusable token svg that I have been using for our NPCs, PCs, and Foes.
+I designed a reusable token svg that I have been using for our NPCs, PCs, and Foes.    
+    
+You can download a copy [here](/files/DnD/DnDTokenSheet.svg)
