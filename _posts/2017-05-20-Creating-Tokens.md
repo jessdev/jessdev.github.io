@@ -19,5 +19,10 @@ You can download a copy [here](/files/DnD/DnDTokenSheet.svg)
 
 Here are some of the tokens I'm using in my current game.
 
-<img src="/img/DnD/Kobold.png" alt="Kobold" style="width:50px;"/>
-<img src="/img/DnD/KoboldInventor.png" alt="Kobold Inventor" style="width:50px;"/>
+<div class="row">
+<img src="/img/DnD/Kobold.png" alt="Kobold" style="width:60px;"/>
+<img src="/img/DnD/KoboldInventor.png" alt="Kobold Inventor" style="width:60px;"/>
+<img src="/img/DnD/KoboldKnight.png" alt="Kobold Dragonshield" style="width:60px;"/>
+<img src="/img/DnD/KoboldScor.png" alt="Kobold Scale Sorcer" style="width:60px;"/>
+<img src="/img/DnD/KoboldWings.png" alt="Winged Kobold" style="width:60px;"/>
+</div>
