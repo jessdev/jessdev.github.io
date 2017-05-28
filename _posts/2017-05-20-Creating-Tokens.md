@@ -20,17 +20,17 @@ You can download a copy [here](/files/DnD/DnDTokenSheet.svg)
 Here are some of the tokens I'm using in my current game.
 
 <div class="row">
-    <div class="col-md-2">
+    <div class="col-md-2 col-sm-6">
         <img src="/img/DnD/Kobold.png" alt="Kobold" style="width:60px;"/>
         <img src="/img/DnD/KoboldWings.png" alt="Winged Kobold" style="width:60px;"/>
         <img src="/img/DnD/KoboldKnight.png" alt="Kobold Dragonshield" style="width:60px;"/>
     </div>
-    <div class="col-md-2">
+    <div class="col-md-2 col-sm-6">
     <img src="/img/DnD/KoboldInventor.png" alt="Kobold Inventor" style="width:60px;"/>
         <img src="/img/DnD/bees.png" alt="Bees" style="width:60px;"/>
         <img src="/img/DnD/koboldScor.png" alt="Kobold Scale Sorcer" style="width:60px;"/>
     </div>
-    <div class="col-md-2">
+    <div class="col-md-2 col-sm-6">
         <img src="/img/DnD/centipeds.png" alt="Swarm of Centipeds" style="width:60px;"/>
         <img src="/img/DnD/mimic.png" alt="mimic" style="width:60px;"/>
         <img src="/img/DnD/wolf.png" alt="Wolf" style="width:60px;"/>
