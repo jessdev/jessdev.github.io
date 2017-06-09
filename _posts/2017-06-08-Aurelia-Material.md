@@ -92,18 +92,18 @@ export class Shell {
     }
       
   }
-}`
+}
 ```
 If typescript is the language of choice, there isn’t a typings file for material. Here is an example of what can be used in it’s place:
 ```
-`/// <reference path ="../typings/index.d.ts" />
+/// <reference path ="../typings/index.d.ts" />
 declare class Material {
     init(params?: any): any;
 }
 
 interface JQueryStatic{
     material: Material;
-}`
+}
 ```
 Make sure to update your tsconfig.json file to find the custom typings files you create.
 
