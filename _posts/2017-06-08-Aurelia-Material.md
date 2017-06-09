@@ -108,4 +108,4 @@ interface JQueryStatic{
 Make sure to update your tsconfig.json file to find the custom typings files you create.
 
 ## Final Thoughts
-This should get bootstrap material design into your project. In you run into any issues, I have a test project on my github [here](https://github.com/jessdev/Aurelia-With-Bootstrap-Material-Design). I am also available via my contact page. Otherwise, Have fun!
+This should get bootstrap material design into your project. If you run into any issues, I have a test project on my github [here](https://github.com/jessdev/Aurelia-With-Bootstrap-Material-Design). I am also available via my contact page. Otherwise, Have fun!
