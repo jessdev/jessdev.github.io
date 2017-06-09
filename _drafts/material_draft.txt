@@ -1,0 +1,71 @@
+If you aren’t familiar with material design by google, I recommend reading about it [here]( https://material.io). Google created a design philosophy [to help teams unite style, branding, interaction, and motion under a cohesive set of principles.]( https://design.google.com/articles/design-is-never-done/).  [Federico Zivolo]( https://github.com/FezVrasta) created one of my favorite implementations of this design philosophy.
+Paper Elements or [Material Design for Bootstrap]( http://fezvrasta.github.io/bootstrap-material-design/) looks and feels amazing. I love how the buttons pop out so that my users never miss them and how the input fields have little sliding bars whenever they click on them. It is my go to choice when it comes to providing CSS for any websites that I build.
+However, it is a little tricky to integrate this CSS library if you’re building an Aurelia App. There are a couple of pit falls that you have to jump over.
+If you're using jspm as your package manager you can use the following command   `jspm install -y npm:bootstrap npm:bootstrap-material-design npm:arrive npm:jquery` Arrive is required if elements on the web page are dynamically created and you want the ripple effect.
+
+The first pitfall to jump is getting ripples.css in a place system js can access it. ripples.css comes with bootstrap material design. If it is referenced normally, ie: `<require from="custom-css/ripples.css"></require>`, system js will not be able to find it. I recommend copying it into your src folder. You can either do this in an automated step or by hand. I use a gulp task to automate it:
+`gulp.task('move-ripples', function(){
+  return fs.createReadStream('node_modules/bootstrap-material-design/dist/css/ripples.css')
+  .pipe(fs.createWriteStream('src/custom-css/ripples.css'));
+});`
+
+Next is getting around the async nature of css. Bootstrap has to be loaded before material and then ripples. In my index.html I use system and text to load them one at a time:
+`      System.import('bootstrap/css/bootstrap.css!').then(function(){
+        System.import('bootstrap-material-design/dist/css/bootstrap-material-design.css!').then(function(){
+          System.import('aurelia-bootstrapper');
+        });
+      });`
+Ripples has to be loaded in the root html page that the app serves up. In this case it’s the shell.html.
+`<template>
+  <require from="nav-bar.html"></require>
+  <!--<require from="custom-css/custom-bootstrap.css"></require>
+  <require from="custom-css/custom-material.css"></require>-->
+  <!--<require from="bootstrap"></require>
+  <require from="bootstrap-material-design"></require>-->
+  <require from="custom-css/ripples.css"></require>
+
+  <nav-bar router.bind="router"></nav-bar>
+
+  <div class="page-host">
+    <router-view></router-view>
+  </div>
+</template>`
+
+The last step is calling `$.material.init();` in the root class of the application. shell.ts should look something like this:
+`import {Router, RouterConfiguration} from 'aurelia-router';
+import 'arrive';
+import 'bootstrap';
+import 'bootstrap-material-design';
+
+export class Shell {
+  public router: Router;
+
+  public configureRouter(config: RouterConfiguration, router: Router) {
+    config.title = 'Aurelia';
+    config.map([
+      { route: ['', 'home'], name: 'home', moduleId: 'home', nav: true, title: 'Home' },
+      { route: ['todo'], name: 'todo', moduleId: 'todo', nav: true, title: 'To Do List' }
+    ]);
+    this.router = router;
+  }
+
+  attached(){
+    if($.material){
+      $.material.init();
+      console.log('material inti run');
+    }else{
+      console.warn('jquery.material was undefined.');
+    }
+      
+  }
+}`
+If typescript is the language of choice, there isn’t a typings file for material. Here is an example of what can be used in it’s place:
+`/// <reference path ="../typings/index.d.ts" />
+declare class Material {
+    init(params?: any): any;
+}
+
+interface JQueryStatic{
+    material: Material;
+}`
+Make sure to update your tsconfig.json file to find the custom typings files you create.
