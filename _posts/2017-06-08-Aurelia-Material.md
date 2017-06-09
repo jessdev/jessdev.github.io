@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Integrating Bootstrap Material Design into Aurelia"
-date:   2017-06-06 10:03 PM
+date:   2017-06-08 10:03 PM
 categories: Code Aurelia
 ---
 
