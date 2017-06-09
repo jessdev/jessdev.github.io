@@ -3,6 +3,7 @@ layout: post
 title:  "Integrating Bootstrap Material Design into Aurelia"
 date:   2017-06-08 10:03 PM
 categories: Code Aurelia
+header-img: "img/aurelia-material.png"
 ---
 
 ## Introduction
@@ -40,7 +41,7 @@ Ripples has to be loaded in the root html page that the app serves up. In this c
 ```
 <template>
   <require from="nav-bar.html"></require>
-  <require from="bootstra-material-design/dist/css/ripples.css"></require>
+  <require from="bootstrap-material-design/dist/css/ripples.css!"></require>
 
   <nav-bar router.bind="router"></nav-bar>
 
