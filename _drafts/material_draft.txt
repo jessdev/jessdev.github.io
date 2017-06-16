@@ -3,7 +3,7 @@ Paper Elements or [Material Design for Bootstrap]( http://fezvrasta.github.io/bo
 However, it is a little tricky to integrate this CSS library if you’re building an Aurelia App. There are a couple of pit falls that you have to jump over.
 If you're using jspm as your package manager you can use the following command   `jspm install -y npm:bootstrap npm:bootstrap-material-design npm:arrive npm:jquery` Arrive is required if elements on the web page are dynamically created and you want the ripple effect.
 
-The first pitfall to jump is getting ripples.css in a place system js can access it. ripples.css comes with bootstrap material design. If it is referenced normally, ie: `<require from="custom-css/ripples.css"></require>`, system js will not be able to find it. I recommend copying it into your src folder. You can either do this in an automated step or by hand. I use a gulp task to automate it:
+The first pitfall to jump is getting ripples.css in a place system js can access it. ripples.css comes with bootstrap material design. If it is referenced normally, ie: `<require from="custom-css/ripples.css"></require>`, system js will not be able to find it. The easiest way to get around this issue is to just copy it into your src folder
 `gulp.task('move-ripples', function(){
   return fs.createReadStream('node_modules/bootstrap-material-design/dist/css/ripples.css')
   .pipe(fs.createWriteStream('src/custom-css/ripples.css'));
@@ -69,3 +69,4 @@ interface JQueryStatic{
     material: Material;
 }`
 Make sure to update your tsconfig.json file to find the custom typings files you create.
+
