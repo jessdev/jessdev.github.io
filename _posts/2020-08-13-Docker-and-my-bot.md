@@ -5,7 +5,6 @@ date:   2020-08-13 9:34 PM
 categories: Code Docker Discord
 ---
 
-
 ## Bots & Discord
 There are so many bots for discord. Things to track users, help with roles, administration, memes, the list goes on. Discord has a ton of integration capability, it’s fun to play around with. Here’s a list of some the more interesting and useful bots that I have found:
 * [Carl Bot](https://carl.gg/) for moderation and automation
