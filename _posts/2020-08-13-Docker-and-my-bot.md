@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Docker and My Bot"
-date:   2020-07-25 9:25 PM
+date:   2020-08-13 9:34 PM
 categories: Code Docker Discord
 header-img: "img/aurelia-material.png"
 ---
