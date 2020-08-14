@@ -17,11 +17,11 @@ So what kind of bot could I possibly build that hasn’t been built yet? The ans
 
 ## Dad Bot
 Dad bot is a bot that will yell at you for swearing. Already he's made an enemy of one of my good friends:
-![Ah well](img/Dadbot_01.png)
+![Ah well](../img/Dadbot_01.png)
 
 He's fun, he's punny, he's... most importantly, in demand...?
 
-![I want that bot](img/i_want_dad_bot.png)
+![I want that bot](../img/i_want_dad_bot.png)
 
 ## Dad Bot is in demand
 Okay so how to make my bot something that anyone can add? Probably the first step is making it deployable.
