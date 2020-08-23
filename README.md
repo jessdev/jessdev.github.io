@@ -1,15 +1,21 @@
-#Clean Blog by Start Bootstrap - Jekyll Version
+# Jekyll Based Software Blog
+This is a Jekyll based software blog that uses a theme called the Clean Blog.
+This software blog can be found [here](https://jessicadevriese.com)
 
-The official Jekyll version of the Clean Blog theme by [Start Bootstrap](http://startbootstrap.com/).
+## Maintaining
+Mainting the repo requires the following:
+- [Ruby](https://www.ruby-lang.org/en/downloads/) Version 2.5.0 or above.
+    - if you're using windows, I recommend this [link](https://rubyinstaller.org/downloads/)
+- [Ruby Gems](https://rubygems.org/pages/download)
+- [GCC](https://gcc.gnu.org/install/)
+- [Make](https://www.gnu.org/software/make/)
 
-###[View Live Demo &rarr;](http://blackrockdigital.github.io/startbootstrap-clean-blog-jekyll/)
+Extra guides can be found on the [Jykell website](https://jekyllrb.com/docs/installation/)
 
-## Before You Begin
+## Blog Theme Documentation
+Clean Blog by [Start Bootstrap](http://startbootstrap.com/).
+See a live demo of the [blog here](http://blackrockdigital.github.io/startbootstrap-clean-blog-jekyll/).
 
-In the _config.yml file, the base URL is set to /startbootstrap-clean-blog-jekyll which is this themes gh-pages preview. It's recommended that you remove the base URL before working with this theme locally!
-
-It should look like this:
-`baseurl: ""`
 
 ## What's Included
 
